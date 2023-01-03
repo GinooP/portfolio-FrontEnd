@@ -1,0 +1,20 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color: #717ac7;
+}
+h1, h3{
+    display: inline;
+}
+#estudios{
+    font-weight: bold;
+}
+#borrar{
+    color: rgb(182, 0, 0);
+    font-weight: bold;
+}
+#editar{
+    color: gold;
+    font-weight: bold;
+}
