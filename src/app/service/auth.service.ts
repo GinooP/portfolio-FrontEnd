@@ -9,7 +9,7 @@ import { JwtDto } from '../model/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://portfolio-backend-production-72af.up.railway.app/auth/';
+  authURL = 'https://portfolio-backend-production-f08d.up.railway.app/auth/';
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
