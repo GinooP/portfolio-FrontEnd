@@ -1,20 +1,67 @@
-.row{
+.row {
     padding: 20px;
+    margin: 0rem;
+    box-shadow: inset 0px -4px 17px 0px #1278bf;
 }
-div{
-    background-color: #717ac7;
+
+div {
+    background-color: #ffffff;
 }
-h1, h3{
+
+h1,
+h3 {
     display: inline;
 }
-#expLab{
+
+#expLab {
     font-weight: bold;
 }
-#borrar{
+
+#borrar {
     color: rgb(182, 0, 0);
     font-weight: bold;
 }
-#editar{
+
+#editar {
     color: gold;
     font-weight: bold;
+}
+
+h1 {
+    text-align: left;
+    font-family: Arial;
+    font-size: 30px;
+    COLOR: #1278BF;
+    text-shadow: 0px 0px 9px #508AD3;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
 }

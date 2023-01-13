@@ -1,25 +1,25 @@
 <div class="row">
-    <h1>Educacion</h1>
+    <h1>Educación</h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Educacion
+            Agregar Educación
         </button>
     </div>
 
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+    <div >
         <table class="table">
             <tbody>
-                <tr *ngFor="let Educacion of educacion">
-                    <td>
+                <tr *ngFor="let Educacion of educacion" class="col-lg-6 col-md-11 col-sm-11">
+                        <td  >
                         <h4>{{Educacion.nombreE}}</h4>
-                    </td>
-                    <td>{{Educacion.descripcionE}}</td>
-                    <td *ngIf="isLogged"><button id="editar" type="button" class="btn btn-link"
-                            routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged"><button id="borrar" type="button" class="btn btn-link"
+                        </td>
+                        <td>{{Educacion.descripcionE}}</td> 
+                        <td *ngIf="isLogged"  ><button id="editar" type="button" class="btn btn-link"
+                            routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square"></i> EDITAR</button></td>
+                        <td *ngIf="isLogged"><button id="borrar" type="button" class="btn btn-link"
                             (click)="borrar(Educacion.id)"><i class="bi bi-trash3-fill"></i> BORRAR</button></td>
+                    
                 </tr>
             </tbody>
 

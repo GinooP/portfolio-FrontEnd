@@ -3,13 +3,18 @@
         <div class="logo">
             <img src="../../../assets/LogoArgProg.png" id="logoAP">
         </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">CERRAR
+                SESION</button>
+        </div>
         <div class="redes">
-            <a href=""><img src="../../../assets/LogoFacebook.png" id="facebook"></a>
-            <a href=""><img src="../../../assets/LogoInstagram.png" id="instagram"></a>
-            <a href=""><img src="../../../assets/LogoLinkedin.png" id="linkedin"></a>
-            <button type="button" class="btn btn-outline-dark"(click)="login()" *ngIf="!isLogged">INGRESO</button>
-            <button type="button" class="btn btn-outline-dark"(click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+            <a href="https://www.facebook.com/gino.pighin/"><img src="../../../assets/LogoFacebook.png"
+                    id="facebook"></a>
+            <a href="https://www.instagram.com/gino_pighin/"><img src="../../../assets/LogoInstagram.png"
+                    id="instagram"></a>
+            <a href="https://www.linkedin.com/in/gino-gaspar-pighin-06a6a5261/"><img
+                    src="../../../assets/LogoLinkedin.png" id="linkedin"></a>
         </div>
     </div>
 </div>
-

@@ -10,7 +10,7 @@
     <div class="col-lg-11">
         <table class="table">
             <tbody>
-                <tr *ngFor="let Experiencia of expe">
+                <tr  *ngFor="let Experiencia of expe">
                     <td>
                         <h4>{{Experiencia.nombreE}}</h4>
                     </td>
@@ -18,11 +18,11 @@
                     <td *ngIf="isLogged"><button id="editar" type="button" class="btn btn-link"
                             routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i> EDITAR</button>
                     </td>
-                    <td *ngIf="isLogged"><button id="borrar" type="button" class="btn btn-link"
+                    <td *ngIf="isLogged" ><button id="borrar" type="button" class="btn btn-link"
                             (click)="delete(Experiencia.id)"><i class="bi bi-trash3-fill"></i> BORRAR</button></td>
+                        
                 </tr>
             </tbody>
-
         </table>
     </div>
 

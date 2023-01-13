@@ -1,0 +1,12 @@
+<div class="login-dark">
+    <form method="post" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <h2 class="sr-only">Panel de creación</h2>
+        <div class="illustration"><i class="bi bi-code-slash"></i></div>
+        <div class="form-group"><input class="form-control" type="text" id="nombre" name="nombre"
+                [(ngModel)]="nombre" required="" placeholder="Nueva Skill"></div>
+        <div class="form-group"><input class="form-control" type="porcentaje" id="porcentaje" name="porcentaje"
+                [(ngModel)]="porcentaje" required="" placeholder="Porcentaje">
+        </div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Agregar Skill</button></div>
+    </form>
+</div>
